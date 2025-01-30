@@ -22,7 +22,7 @@ const HomeScreen: React.FC = () => {
     <AnimatedPage>
       <div className="fixed inset-0 w-full h-full">
         <img
-          src="./Splash/Gif-Animon.gif"
+          src="/Splash/Gif-Animon.gif"
           alt="Animon Background"
           className="absolute inset-0 w-full h-full object-cover"
         />
