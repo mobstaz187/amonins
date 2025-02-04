@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedPage from './AnimatedPage';
 
+interface VideoEvent extends React.SyntheticEvent<HTMLVideoElement> {
+  currentTarget: HTMLVideoElement;
+}
+
 const HomeScreen: React.FC = () => {
   const [currentVideo, setCurrentVideo] = useState(0);
   const [selectedMode, setSelectedMode] = useState('story');
@@ -215,8 +219,8 @@ const HomeScreen: React.FC = () => {
                             muted
                             loop
                             playsInline
-                            onMouseEnter={(e) => e.currentTarget.play()}
-                            onMouseLeave={(e) => {
+                            onMouseEnter={(e: VideoEvent) => e.currentTarget.play()}
+                            onMouseLeave={(e: VideoEvent) => {
                               e.currentTarget.pause();
                               e.currentTarget.currentTime = 0;
                             }}
