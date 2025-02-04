@@ -214,7 +214,7 @@ const HomeScreen: React.FC = () => {
                               : 'opacity-70 hover:opacity-100 hover:scale-105'}`}
                         >
                           <video
-                            src={`/Featured/${video}.mp4`}
+                            src={`./Featured/${video}.mp4`}
                             className="w-full h-full object-cover"
                             muted
                             loop
