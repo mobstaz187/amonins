@@ -29,7 +29,7 @@ const HomeScreen: React.FC = () => {
         {/* Background */}
         <div className="fixed inset-0">
           <img
-            src="/Splash/Gif-Animon.gif"
+            src="./Splash/Gif-Animon.gif"
             alt="Animon Background"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -40,7 +40,7 @@ const HomeScreen: React.FC = () => {
         <div className="fixed top-0 left-0 right-0 h-20 pokemon-panel px-8 flex items-center z-30">
           <div className="relative">
             <img 
-              src="/logo-default-animon.png" 
+              src="./logo-default-animon.png" 
               alt="Animon Logo" 
               className="h-12 w-auto drop-shadow-lg"
             />
@@ -156,7 +156,7 @@ const HomeScreen: React.FC = () => {
                       <div className="relative pt-[56.25%]">
                         <video
                           key={featuredVideos[currentVideo]}
-                          src={`/Featured/${featuredVideos[currentVideo]}.mp4`}
+                          src={`./Featured/${featuredVideos[currentVideo]}.mp4`}
                           className="absolute inset-0 w-full h-full object-contain bg-black"
                           autoPlay
                           muted
